@@ -18,7 +18,7 @@ on:
 env:
   QUAY_ORG: opendatahub
   QUAY_IMG_REPO: model-registry-operator
-  QUAY_USERNAME: ${{ secrets.QUAY_USERNAME }}
+  QUAY_USERNAME: ${{ secrets.QUAY_USERNAME || 'morana'}}
   QUAY_PASSWORD: ${{ secrets.QUAY_PASSWORD }}
 
 jobs:
