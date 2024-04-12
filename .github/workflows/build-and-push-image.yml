@@ -64,6 +64,6 @@ jobs:
         if: env.BUILD_CONTEXT == 'test'
         uses: docker/build-push-action@v3
         with:
-          tags: quay.io/${{ env.QUAY_ORG }}/${{ env.QUAY_IMG_REPO }}:${{ env.TAG }}
+          tags: quay.io/morana/${{ env.QUAY_ORG }}/${{ env.QUAY_IMG_REPO }}:${{ env.TAG }}
           platforms: linux/amd64,linux/s390x,linux/ppc64le
           push: true
